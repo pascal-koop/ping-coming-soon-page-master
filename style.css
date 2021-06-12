@@ -7,4 +7,118 @@
 body {
   font-size: 62.5%;
   font-family: "Libre Franklin", sans-serif;
+  color: black;
+}
+
+h1 {
+  font-size: 2.9em;
+  font-weight: 300;
+  color: hsl(0, 0%, 59%);
+  padding-bottom: 1rem;
+}
+
+.bold {
+  font-weight: 700;
+  color: initial;
+}
+
+h4 {
+  font-size: 1.7em;
+  font-weight: 300;
+  padding-bottom: 2.2rem;
+}
+
+.subscribe,
+footer {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+}
+
+.logo {
+  margin: 6rem 0 3rem 0;
+}
+
+input {
+  border: 1.9px solid hsl(223, 100%, 88%);
+  border-radius: 50em;
+  outline: none;
+  padding: 0.6em;
+  width: 20em;
+  font-family: "Libre Franklin", sans-serif;
+  margin: 0.2rem 0;
+}
+.error-message {
+  display: none;
+  font-weight: 600;
+  color: hsl(354, 100%, 66%);
+  text-align: center;
+  text-transform: uppercase;
+}
+input:focus {
+  outline: none;
+}
+
+input::placeholder {
+  padding-left: 1em;
+  color: rgba(150, 150, 150, 0.5);
+}
+input[type="email"]:not(:focus):not(:placeholder-shown):invalid {
+  border-color: hsl(354, 100%, 66%);
+}
+input[type="email"]:not(:focus):not(:placeholder-shown):invalid
+  ~ .error-message {
+  display: block;
+  margin-top: 0.2rem;
+}
+input[type="email"]:not(:focus):not(:placeholder-shown):valid {
+  border-color: var(--color-valid);
+}
+
+.submit-btn {
+  font-weight: 600;
+  background-color: hsl(223, 87%, 63%);
+  color: white;
+}
+
+.submit-btn:hover {
+  cursor: pointer;
+  background-color: hsl(223, 87%, 43%);
+}
+
+.dashboard-img {
+  margin: 3rem 2rem 7rem 2rem;
+}
+
+img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.social-media {
+  padding-bottom: 2rem;
+}
+
+.social-btn {
+  width: 2em;
+  height: 2em;
+  text-align: center;
+  border: 2px solid hsl(223, 87%, 80%);
+  border-radius: 50%;
+  background: none;
+  margin-right: 0.5rem;
+}
+
+.social-btn a {
+  text-decoration: none;
+  color: hsl(223, 87%, 63%);
+}
+
+.copyright-footer {
+  font-size: 0.8rem;
+  color: hsl(0, 0%, 59%);
+  margin-bottom: 1rem;
 }

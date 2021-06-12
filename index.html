@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- displays site properly based on user's device -->
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style-desktop.css">
     <link
       rel="icon"
       type="image/png"
@@ -21,20 +22,9 @@
       crossorigin="anonymous"
     ></script>
     <title>Frontend Mentor | Ping coming soon page</title>
-
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
   </head>
   <body>
-    <header class="head">
+    <header class="header">
       <div class="subscribe">
         <div class="logo">
           <svg xmlns="http://www.w3.org/2000/svg" width="86" height="26">
@@ -50,31 +40,35 @@
             </g>
           </svg>
         </div>
-        <h1 class="statement">
+        <h1 class="heading">
           We are launching <span class="bold">soon!</span></h1
         >
-        <h4 class="sub-statement">Subscribe and get notified</h4>
+        <h4 class="sub-heading">Subscribe and get notified</h4>
         <form action="#">
           <input
+            class="enter-mail"
             type="email"
             placeholder="Your email address..."
             required
-          /><br />
-          <input type="submit" />
+          />
+          <span class="error-message">Please Enter a Valid E-mail Adress</span>
+          <br />
+          <input class="submit-btn" type="submit" value="Notify Me" />
         </form>
       </div>
     </header>
-    <img
-      class="dashboard"
-      src="images\illustration-dashboard.png"
-      alt="Dashboard"
-    />
-
+    <div class="dashboard-img">
+      <img src="images\illustration-dashboard.png" alt="Dashboard" />
+    </div>
     <footer>
       <div class="social-media">
-        <i class="fab fa-facebook-f fa-lg"></i>
-        <i class="fab fa-twitter fa-lg"></i>
-        <i class="fab fa-instagram fa-lg"></i>
+        <button class="social-btn"
+          ><a href="#"><i class="fab fa-facebook-f fa-1x"></a></i
+        ></button>
+        <button class="social-btn"><a href="#"><i class="fab fa-twitter fa-1x"></a></i></button>
+        <button class="social-btn"
+          ><a href="#"><i class="fab fa-instagram fa-1x"></i></a>
+        </button>
       </div>
       <!-- <p class="attribution">
         Challenge by
@@ -82,7 +76,9 @@
           >Frontend Mentor</a
         >. Coded by <a href="#">Pascale</a>. -->
       <!-- </p> -->
-      &copy; Copyright Ping. All rights reserved.
+      <p class="copyright-footer">
+        &copy; Copyright Ping. All rights reserved.</p
+      >
     </footer>
     <script src="https://unpkg.com/ionicons@5.5.1/dist/ionicons.js"></script>
   </body>

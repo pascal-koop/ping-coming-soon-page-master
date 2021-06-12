@@ -1,0 +1,38 @@
+@media only screen and (min-width: 769px) {
+  .heading {
+    font-size: 4.5em;
+  }
+
+  form {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(auto-fit, minmax(40px, auto));
+  }
+
+  input {
+    width: 27em;
+    grid-column: 1/3;
+  }
+
+  .submit-btn {
+    width: 13em;
+    margin-left: 1rem;
+    grid-column: 3/3;
+    grid-row: 1;
+    justify-self: start;
+  }
+
+  input[type="email"]:not(:focus):not(:placeholder-shown):invalid
+    ~ .error-message {
+    grid-row: 2/3;
+    grid-column: 1/3;
+  }
+  .dashboard-img {
+    max-width: 800px;
+    margin: 2.9em auto;
+  }
+
+  .copyright-footer {
+    margin-bottom: 1em;
+  }
+}
