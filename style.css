@@ -74,9 +74,9 @@ input[type="email"]:not(:focus):not(:placeholder-shown):invalid
   display: block;
   margin-top: 0.2rem;
 }
-input[type="email"]:not(:focus):not(:placeholder-shown):valid {
+/* input[type="email"]:not(:focus):not(:placeholder-shown):valid {
   border-color: var(--color-valid);
-}
+} */
 
 .submit-btn {
   font-weight: 600;
